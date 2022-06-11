@@ -1,0 +1,72 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+SLURM_JOBID=/var/spool/slurm/slurmd/job30180355/slurm_script
+Job Detail : AE ..AE.AE_256 10 Max 10-13ReRun 2 3 captureBatchSize:5
+Training Size : 1734
+Validation Size : 744
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 256, 256]           1,792
+              ReLU-2         [-1, 64, 256, 256]               0
+         MaxPool2d-3         [-1, 64, 127, 127]               0
+            Conv2d-4        [-1, 128, 127, 127]          73,856
+              ReLU-5        [-1, 128, 127, 127]               0
+         MaxPool2d-6          [-1, 128, 63, 63]               0
+            Conv2d-7          [-1, 256, 63, 63]         295,168
+              ReLU-8          [-1, 256, 63, 63]               0
+         MaxPool2d-9          [-1, 256, 31, 31]               0
+           Conv2d-10          [-1, 512, 31, 31]       1,180,160
+             ReLU-11          [-1, 512, 31, 31]               0
+        MaxPool2d-12          [-1, 512, 15, 15]               0
+           Conv2d-13          [-1, 512, 15, 15]       2,359,808
+             ReLU-14          [-1, 512, 15, 15]               0
+        MaxPool2d-15            [-1, 512, 7, 7]               0
+           Conv2d-16            [-1, 512, 7, 7]       2,359,808
+             ReLU-17            [-1, 512, 7, 7]               0
+        MaxPool2d-18            [-1, 512, 3, 3]               0
+           Linear-19                  [-1, 256]       1,179,904
+  ConvTranspose2d-20             [-1, 64, 6, 6]           9,280
+             ReLU-21             [-1, 64, 6, 6]               0
+  ConvTranspose2d-22          [-1, 512, 14, 14]         524,800
+             ReLU-23          [-1, 512, 14, 14]               0
+  ConvTranspose2d-24          [-1, 256, 30, 30]       2,097,408
+             ReLU-25          [-1, 256, 30, 30]               0
+  ConvTranspose2d-26          [-1, 128, 62, 62]         524,416
+             ReLU-27          [-1, 128, 62, 62]               0
+  ConvTranspose2d-28         [-1, 64, 127, 127]         204,864
+             ReLU-29         [-1, 64, 127, 127]               0
+  ConvTranspose2d-30          [-1, 3, 256, 256]           3,075
+================================================================
+Total params: 10,814,339
+Trainable params: 10,814,339
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 165.23
+Params size (MB): 41.25
+Estimated Total Size (MB): 207.23
+----------------------------------------------------------------
+Training Epoch :   0 | Total loss : 0.4483 
+Validation Epoch :   0 | Total loss : 0.35860288| Model Time :43.15899920463562 | DataProcessing Time :153.26512908935547
+Training Epoch :   1 | Total loss : 0.3535 
+Validation Epoch :   1 | Total loss : 0.35220274| Model Time :41.19742178916931 | DataProcessing Time :155.11731958389282
+Training Epoch :   2 | Total loss : 0.3507 
+slurmstepd: error: *** JOB 30180355 ON falcon6 CANCELLED AT 2022-06-10T14:28:00 ***

@@ -1,0 +1,33 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+SLURM_JOBID=/var/spool/slurm/slurmd/job30178665/slurm_script
+Job Detail : AE ..AE.AE_256 100 Max 100-13ReRun 8 3
+Training Size : 1734
+Validation Size : 744
+Traceback (most recent call last):
+  File "./main_rotation_AE_test.py", line 104, in <module>
+    summary(model,(3,256,256))
+  File "/gpfs/space/home/waiti84/.local/lib/python3.6/site-packages/torchsummary/torchsummary.py", line 72, in summary
+    model(*x)
+  File "/gpfs/space/home/waiti84/.local/lib/python3.6/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "../VAE/AE/AE_256.py", line 125, in forward
+    facefeature = facefeature.view(-1,512*7*7)
+RuntimeError: shape '[-1, 25088]' is invalid for input of size 9216

@@ -1,0 +1,529 @@
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+SLURM_JOBID=/var/spool/slurm/slurmd/job30160104/slurm_script
+Job Detail : AE ..AE.AE_10 100 Max 100-18 8 3
+Training Size : 1734
+Validation Size : 744
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 256, 256]           1,792
+              ReLU-2         [-1, 64, 256, 256]               0
+         MaxPool2d-3         [-1, 64, 127, 127]               0
+            Conv2d-4        [-1, 128, 127, 127]          73,856
+              ReLU-5        [-1, 128, 127, 127]               0
+         MaxPool2d-6          [-1, 128, 63, 63]               0
+            Conv2d-7          [-1, 256, 63, 63]         295,168
+              ReLU-8          [-1, 256, 63, 63]               0
+         MaxPool2d-9          [-1, 256, 31, 31]               0
+           Conv2d-10          [-1, 512, 31, 31]       1,180,160
+             ReLU-11          [-1, 512, 31, 31]               0
+        MaxPool2d-12          [-1, 512, 15, 15]               0
+           Conv2d-13          [-1, 512, 15, 15]       2,359,808
+             ReLU-14          [-1, 512, 15, 15]               0
+        MaxPool2d-15            [-1, 512, 7, 7]               0
+           Conv2d-16            [-1, 512, 7, 7]       2,359,808
+             ReLU-17            [-1, 512, 7, 7]               0
+        MaxPool2d-18            [-1, 512, 3, 3]               0
+           Linear-19                   [-1, 10]          46,090
+  ConvTranspose2d-20             [-1, 64, 3, 6]             320
+             ReLU-21             [-1, 64, 3, 6]               0
+  ConvTranspose2d-22            [-1, 512, 7, 7]         197,120
+             ReLU-23            [-1, 512, 7, 7]               0
+  ConvTranspose2d-24          [-1, 256, 15, 15]       1,179,904
+             ReLU-25          [-1, 256, 15, 15]               0
+  ConvTranspose2d-26          [-1, 128, 31, 31]         295,040
+             ReLU-27          [-1, 128, 31, 31]               0
+  ConvTranspose2d-28           [-1, 64, 63, 63]          73,792
+             ReLU-29           [-1, 64, 63, 63]               0
+  ConvTranspose2d-30         [-1, 32, 127, 127]          18,464
+             ReLU-31         [-1, 32, 127, 127]               0
+  ConvTranspose2d-32          [-1, 3, 256, 256]           1,539
+================================================================
+Total params: 8,082,861
+Trainable params: 8,082,861
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.75
+Forward/backward pass size (MB): 151.80
+Params size (MB): 30.83
+Estimated Total Size (MB): 183.38
+----------------------------------------------------------------
+Training Epoch :   0 | Total loss : 0.7122 
+Validation Epoch :   0 | Total loss : 0.73959559| Model Time :45.010464668273926 | DataProcessing Time :203.30241799354553
+Training Epoch :   1 | Total loss : 0.6414 
+SVD converge fail SVD did not converge
+Validation Epoch :   1 | Total loss : 0.64126706| Model Time :40.89466309547424 | DataProcessing Time :193.63184189796448
+Training Epoch :   2 | Total loss : 0.5396 
+Validation Epoch :   2 | Total loss : 0.53902280| Model Time :42.40765643119812 | DataProcessing Time :193.11274480819702
+Training Epoch :   3 | Total loss : 0.4510 
+SVD converge fail SVD did not converge
+SVD converge fail SVD did not converge
+Validation Epoch :   3 | Total loss : 0.45131367| Model Time :41.98299050331116 | DataProcessing Time :195.2892563343048
+Training Epoch :   4 | Total loss : 0.4027 
+Validation Epoch :   4 | Total loss : 0.42567295| Model Time :41.26297473907471 | DataProcessing Time :193.4648985862732
+Training Epoch :   5 | Total loss : 0.3899 
+Validation Epoch :   5 | Total loss : 0.41743818| Model Time :42.650776624679565 | DataProcessing Time :194.72504234313965
+Training Epoch :   6 | Total loss : 0.3850 
+Validation Epoch :   6 | Total loss : 0.41435954| Model Time :39.14583349227905 | DataProcessing Time :196.2449345588684
+Training Epoch :   7 | Total loss : 0.3813 
+Validation Epoch :   7 | Total loss : 0.41394722| Model Time :40.741220235824585 | DataProcessing Time :197.73161029815674
+Training Epoch :   8 | Total loss : 0.3813 
+Validation Epoch :   8 | Total loss : 0.41404611| Model Time :40.26401400566101 | DataProcessing Time :197.1377968788147
+Training Epoch :   9 | Total loss : 0.3803 
+Validation Epoch :   9 | Total loss : 0.41174015| Model Time :42.271469831466675 | DataProcessing Time :189.9850413799286
+Training Epoch :  10 | Total loss : 0.3799 
+Validation Epoch :  10 | Total loss : 0.41166368| Model Time :44.29988479614258 | DataProcessing Time :195.53701663017273
+Training Epoch :  11 | Total loss : 0.3795 
+Validation Epoch :  11 | Total loss : 0.41124108| Model Time :41.90724039077759 | DataProcessing Time :196.59610891342163
+Training Epoch :  12 | Total loss : 0.3788 
+Validation Epoch :  12 | Total loss : 0.41130966| Model Time :45.31739854812622 | DataProcessing Time :197.13157057762146
+Training Epoch :  13 | Total loss : 0.3787 
+Validation Epoch :  13 | Total loss : 0.41065374| Model Time :44.868727684020996 | DataProcessing Time :196.7775764465332
+Training Epoch :  14 | Total loss : 0.3786 
+Validation Epoch :  14 | Total loss : 0.41126311| Model Time :40.515581369400024 | DataProcessing Time :196.56286883354187
+Training Epoch :  15 | Total loss : 0.3785 
+SVD converge fail SVD did not converge
+Validation Epoch :  15 | Total loss : 0.40961137| Model Time :41.16846561431885 | DataProcessing Time :195.7190282344818
+Training Epoch :  16 | Total loss : 0.3777 
+Validation Epoch :  16 | Total loss : 0.41077775| Model Time :41.40286374092102 | DataProcessing Time :189.82238602638245
+Training Epoch :  17 | Total loss : 0.3786 
+Validation Epoch :  17 | Total loss : 0.40897682| Model Time :42.04865097999573 | DataProcessing Time :197.43104648590088
+Training Epoch :  18 | Total loss : 0.3774 
+Validation Epoch :  18 | Total loss : 0.40964666| Model Time :46.957709312438965 | DataProcessing Time :197.01420164108276
+Training Epoch :  19 | Total loss : 0.3771 
+SVD converge fail SVD did not converge
+Validation Epoch :  19 | Total loss : 0.40879637| Model Time :45.68298816680908 | DataProcessing Time :183.1391966342926
+Training Epoch :  20 | Total loss : 0.3772 
+Validation Epoch :  20 | Total loss : 0.41003954| Model Time :42.87423133850098 | DataProcessing Time :192.8664629459381
+Training Epoch :  21 | Total loss : 0.3777 
+Validation Epoch :  21 | Total loss : 0.40883648| Model Time :44.10765361785889 | DataProcessing Time :197.09657430648804
+Training Epoch :  22 | Total loss : 0.3776 
+Validation Epoch :  22 | Total loss : 0.40893051| Model Time :40.856329679489136 | DataProcessing Time :191.76248025894165
+Training Epoch :  23 | Total loss : 0.3780 
+Validation Epoch :  23 | Total loss : 0.41044468| Model Time :39.67041635513306 | DataProcessing Time :194.98207640647888
+Training Epoch :  24 | Total loss : 0.3782 
+Validation Epoch :  24 | Total loss : 0.41025689| Model Time :41.39157319068909 | DataProcessing Time :200.03315424919128
+Training Epoch :  25 | Total loss : 0.3773 
+Validation Epoch :  25 | Total loss : 0.40818992| Model Time :40.79864311218262 | DataProcessing Time :190.0644450187683
+Training Epoch :  26 | Total loss : 0.3762 
+Validation Epoch :  26 | Total loss : 0.40908420| Model Time :41.265281200408936 | DataProcessing Time :190.90865230560303
+Training Epoch :  27 | Total loss : 0.3755 
+Validation Epoch :  27 | Total loss : 0.40589496| Model Time :41.287328243255615 | DataProcessing Time :193.6748309135437
+Training Epoch :  28 | Total loss : 0.3730 
+Validation Epoch :  28 | Total loss : 0.40237248| Model Time :41.16012096405029 | DataProcessing Time :198.40917038917542
+Training Epoch :  29 | Total loss : 0.3706 
+Validation Epoch :  29 | Total loss : 0.40230763| Model Time :41.704893827438354 | DataProcessing Time :196.6706907749176
+Training Epoch :  30 | Total loss : 0.3694 
+Validation Epoch :  30 | Total loss : 0.39952591| Model Time :43.86708426475525 | DataProcessing Time :198.526629447937
+Training Epoch :  31 | Total loss : 0.3674 
+SVD converge fail SVD did not converge
+Validation Epoch :  31 | Total loss : 0.39818165| Model Time :44.797879457473755 | DataProcessing Time :197.27181935310364
+Training Epoch :  32 | Total loss : 0.3664 
+Validation Epoch :  32 | Total loss : 0.39727536| Model Time :40.9292938709259 | DataProcessing Time :194.87191224098206
+Training Epoch :  33 | Total loss : 0.3653 
+Validation Epoch :  33 | Total loss : 0.39601293| Model Time :38.481635332107544 | DataProcessing Time :187.46893882751465
+Training Epoch :  34 | Total loss : 0.3639 
+Validation Epoch :  34 | Total loss : 0.39481574| Model Time :39.3643536567688 | DataProcessing Time :192.32488584518433
+Training Epoch :  35 | Total loss : 0.3640 
+Validation Epoch :  35 | Total loss : 0.39361003| Model Time :42.61530876159668 | DataProcessing Time :191.86918878555298
+Training Epoch :  36 | Total loss : 0.3624 
+Validation Epoch :  36 | Total loss : 0.39192325| Model Time :43.16046667098999 | DataProcessing Time :196.41216206550598
+Training Epoch :  37 | Total loss : 0.3634 
+SVD converge fail SVD did not converge
+Validation Epoch :  37 | Total loss : 0.39475507| Model Time :37.22999548912048 | DataProcessing Time :177.31878542900085
+Training Epoch :  38 | Total loss : 0.3608 
+Validation Epoch :  38 | Total loss : 0.39009675| Model Time :38.585156202316284 | DataProcessing Time :196.04305744171143
+Training Epoch :  39 | Total loss : 0.3580 
+Validation Epoch :  39 | Total loss : 0.38920400| Model Time :47.71859955787659 | DataProcessing Time :174.43338584899902
+Training Epoch :  40 | Total loss : 0.3572 
+Validation Epoch :  40 | Total loss : 0.38665450| Model Time :42.60183310508728 | DataProcessing Time :193.6663703918457
+Training Epoch :  41 | Total loss : 0.3563 
+Validation Epoch :  41 | Total loss : 0.38866195| Model Time :48.061447858810425 | DataProcessing Time :187.88740372657776
+Training Epoch :  42 | Total loss : 0.3566 
+Validation Epoch :  42 | Total loss : 0.38556966| Model Time :38.060784339904785 | DataProcessing Time :184.95813703536987
+Training Epoch :  43 | Total loss : 0.3551 
+Validation Epoch :  43 | Total loss : 0.38514459| Model Time :43.077274322509766 | DataProcessing Time :198.2167558670044
+Training Epoch :  44 | Total loss : 0.3546 
+Validation Epoch :  44 | Total loss : 0.38568723| Model Time :45.853527307510376 | DataProcessing Time :193.2661657333374
+Training Epoch :  45 | Total loss : 0.3548 
+Validation Epoch :  45 | Total loss : 0.38659036| Model Time :41.61430597305298 | DataProcessing Time :189.9141297340393
+Training Epoch :  46 | Total loss : 0.3554 
+Validation Epoch :  46 | Total loss : 0.38514337| Model Time :41.353421688079834 | DataProcessing Time :186.85991168022156
+Training Epoch :  47 | Total loss : 0.3544 
+Validation Epoch :  47 | Total loss : 0.38384351| Model Time :38.45208764076233 | DataProcessing Time :200.52490258216858
+Training Epoch :  48 | Total loss : 0.3535 
+Validation Epoch :  48 | Total loss : 0.38356107| Model Time :42.20535492897034 | DataProcessing Time :191.6650586128235
+Training Epoch :  49 | Total loss : 0.3536 
+Validation Epoch :  49 | Total loss : 0.38447204| Model Time :42.7209415435791 | DataProcessing Time :191.4581253528595
+Training Epoch :  50 | Total loss : 0.3557 
+Validation Epoch :  50 | Total loss : 0.38350475| Model Time :41.95933651924133 | DataProcessing Time :174.55555081367493
+Training Epoch :  51 | Total loss : 0.3535 
+Validation Epoch :  51 | Total loss : 0.38440257| Model Time :36.68425464630127 | DataProcessing Time :201.883544921875
+Training Epoch :  52 | Total loss : 0.3533 
+Validation Epoch :  52 | Total loss : 0.38251770| Model Time :42.730629444122314 | DataProcessing Time :198.34034085273743
+Training Epoch :  53 | Total loss : 0.3524 
+Validation Epoch :  53 | Total loss : 0.38220251| Model Time :44.3797402381897 | DataProcessing Time :177.8272523880005
+Training Epoch :  54 | Total loss : 0.3520 
+Validation Epoch :  54 | Total loss : 0.38215202| Model Time :44.044145822525024 | DataProcessing Time :191.21783638000488
+Training Epoch :  55 | Total loss : 0.3523 
+Validation Epoch :  55 | Total loss : 0.38173354| Model Time :42.70039486885071 | DataProcessing Time :198.69533133506775
+Training Epoch :  56 | Total loss : 0.3520 
+Validation Epoch :  56 | Total loss : 0.38207033| Model Time :38.14206051826477 | DataProcessing Time :187.3778476715088
+Training Epoch :  57 | Total loss : 0.3521 
+Validation Epoch :  57 | Total loss : 0.38216007| Model Time :44.564188718795776 | DataProcessing Time :187.87698030471802
+Training Epoch :  58 | Total loss : 0.3524 
+Validation Epoch :  58 | Total loss : 0.38209394| Model Time :39.813700437545776 | DataProcessing Time :196.933926820755
+Training Epoch :  59 | Total loss : 0.3523 
+Validation Epoch :  59 | Total loss : 0.38173383| Model Time :40.421143531799316 | DataProcessing Time :178.06001091003418
+Training Epoch :  60 | Total loss : 0.3516 
+Validation Epoch :  60 | Total loss : 0.38290006| Model Time :40.70445108413696 | DataProcessing Time :196.5722939968109
+Training Epoch :  61 | Total loss : 0.3523 
+SVD converge fail SVD did not converge
+Validation Epoch :  61 | Total loss : 0.38257405| Model Time :43.90282583236694 | DataProcessing Time :183.764746427536
+Training Epoch :  62 | Total loss : 0.3517 
+Validation Epoch :  62 | Total loss : 0.38256022| Model Time :41.36038422584534 | DataProcessing Time :205.21222591400146
+Training Epoch :  63 | Total loss : 0.3515 
+Validation Epoch :  63 | Total loss : 0.38098404| Model Time :38.45073318481445 | DataProcessing Time :192.69475054740906
+Training Epoch :  64 | Total loss : 0.3510 
+Validation Epoch :  64 | Total loss : 0.38118166| Model Time :45.536282777786255 | DataProcessing Time :193.87864780426025
+Training Epoch :  65 | Total loss : 0.3511 
+Validation Epoch :  65 | Total loss : 0.38037318| Model Time :40.62639594078064 | DataProcessing Time :180.11432003974915
+Training Epoch :  66 | Total loss : 0.3511 
+Validation Epoch :  66 | Total loss : 0.38056388| Model Time :39.48013949394226 | DataProcessing Time :174.91929721832275
+Training Epoch :  67 | Total loss : 0.3513 
+Validation Epoch :  67 | Total loss : 0.38087043| Model Time :35.57683610916138 | DataProcessing Time :179.68972492218018
+Training Epoch :  68 | Total loss : 0.3507 
+Validation Epoch :  68 | Total loss : 0.38067025| Model Time :39.74781680107117 | DataProcessing Time :195.47239112854004
+Training Epoch :  69 | Total loss : 0.3508 
+Validation Epoch :  69 | Total loss : 0.38007334| Model Time :40.21419715881348 | DataProcessing Time :197.70901441574097
+Training Epoch :  70 | Total loss : 0.3503 
+Validation Epoch :  70 | Total loss : 0.38075319| Model Time :42.330501556396484 | DataProcessing Time :196.80146527290344
+Training Epoch :  71 | Total loss : 0.3506 
+Validation Epoch :  71 | Total loss : 0.38233307| Model Time :40.8777334690094 | DataProcessing Time :180.11859893798828
+Training Epoch :  72 | Total loss : 0.3510 
+Validation Epoch :  72 | Total loss : 0.38044307| Model Time :42.032573223114014 | DataProcessing Time :184.06998229026794
+Training Epoch :  73 | Total loss : 0.3499 
+Validation Epoch :  73 | Total loss : 0.37971935| Model Time :42.37747406959534 | DataProcessing Time :194.0018253326416
+Training Epoch :  74 | Total loss : 0.3503 
+Validation Epoch :  74 | Total loss : 0.37924832| Model Time :45.167210817337036 | DataProcessing Time :191.06976914405823
+Training Epoch :  75 | Total loss : 0.3495 
+Validation Epoch :  75 | Total loss : 0.37967458| Model Time :42.486690044403076 | DataProcessing Time :188.56511926651
+Training Epoch :  76 | Total loss : 0.3500 
+Validation Epoch :  76 | Total loss : 0.37920469| Model Time :43.55878162384033 | DataProcessing Time :196.46622157096863
+Training Epoch :  77 | Total loss : 0.3492 
+Validation Epoch :  77 | Total loss : 0.37840661| Model Time :42.654459714889526 | DataProcessing Time :198.34529280662537
+Training Epoch :  78 | Total loss : 0.3492 
+Validation Epoch :  78 | Total loss : 0.37975284| Model Time :38.44986629486084 | DataProcessing Time :191.30690836906433
+Training Epoch :  79 | Total loss : 0.3492 
+SVD converge fail SVD did not converge
+Validation Epoch :  79 | Total loss : 0.37936267| Model Time :39.256590366363525 | DataProcessing Time :186.0504686832428
+Training Epoch :  80 | Total loss : 0.3492 
+Validation Epoch :  80 | Total loss : 0.37823403| Model Time :37.34411954879761 | DataProcessing Time :195.38241529464722
+Training Epoch :  81 | Total loss : 0.3487 
+Validation Epoch :  81 | Total loss : 0.37801364| Model Time :42.75363349914551 | DataProcessing Time :199.74168801307678
+Training Epoch :  82 | Total loss : 0.3486 
+Validation Epoch :  82 | Total loss : 0.37797368| Model Time :40.77061891555786 | DataProcessing Time :196.17089891433716
+Training Epoch :  83 | Total loss : 0.3484 
+Validation Epoch :  83 | Total loss : 0.37805164| Model Time :40.001195430755615 | DataProcessing Time :180.63011121749878
+Training Epoch :  84 | Total loss : 0.3481 
+Validation Epoch :  84 | Total loss : 0.37818280| Model Time :36.58550214767456 | DataProcessing Time :178.6228904724121
+Training Epoch :  85 | Total loss : 0.3482 
+Validation Epoch :  85 | Total loss : 0.37791783| Model Time :43.893964529037476 | DataProcessing Time :196.52001905441284
+Training Epoch :  86 | Total loss : 0.3475 
+Validation Epoch :  86 | Total loss : 0.37717682| Model Time :38.639471769332886 | DataProcessing Time :195.8871476650238
+Training Epoch :  87 | Total loss : 0.3473 
+Validation Epoch :  87 | Total loss : 0.37721938| Model Time :41.054274797439575 | DataProcessing Time :191.01235795021057
+Training Epoch :  88 | Total loss : 0.3477 
+Validation Epoch :  88 | Total loss : 0.37680799| Model Time :38.321033000946045 | DataProcessing Time :192.4989733695984
+Training Epoch :  89 | Total loss : 0.3476 
+Validation Epoch :  89 | Total loss : 0.37704545| Model Time :38.74522089958191 | DataProcessing Time :195.23610925674438
+Training Epoch :  90 | Total loss : 0.3476 
+Validation Epoch :  90 | Total loss : 0.37674245| Model Time :45.06319308280945 | DataProcessing Time :197.80087542533875
+Training Epoch :  91 | Total loss : 0.3474 
+Validation Epoch :  91 | Total loss : 0.37712413| Model Time :38.71058106422424 | DataProcessing Time :193.04245376586914
+Training Epoch :  92 | Total loss : 0.3478 
+Validation Epoch :  92 | Total loss : 0.37781852| Model Time :39.09700012207031 | DataProcessing Time :176.08369159698486
+Training Epoch :  93 | Total loss : 0.3476 
+Validation Epoch :  93 | Total loss : 0.37739244| Model Time :48.79572296142578 | DataProcessing Time :200.30317664146423
+Training Epoch :  94 | Total loss : 0.3470 
+Validation Epoch :  94 | Total loss : 0.37654024| Model Time :40.87592697143555 | DataProcessing Time :192.9901421070099
+Training Epoch :  95 | Total loss : 0.3468 
+Validation Epoch :  95 | Total loss : 0.37630731| Model Time :47.33421015739441 | DataProcessing Time :199.5742290019989
+Training Epoch :  96 | Total loss : 0.3467 
+Validation Epoch :  96 | Total loss : 0.37669012| Model Time :38.864070653915405 | DataProcessing Time :192.05942392349243
+Training Epoch :  97 | Total loss : 0.3471 
+Validation Epoch :  97 | Total loss : 0.37673786| Model Time :45.493364334106445 | DataProcessing Time :197.6343550682068
+Training Epoch :  98 | Total loss : 0.3470 
+Validation Epoch :  98 | Total loss : 0.37638301| Model Time :40.1548957824707 | DataProcessing Time :186.16318774223328
+Training Epoch :  99 | Total loss : 0.3468 
+Validation Epoch :  99 | Total loss : 0.37639830| Model Time :37.36431312561035 | DataProcessing Time :185.46726417541504
+Training Epoch : 100 | Total loss : 0.3466 
+Validation Epoch : 100 | Total loss : 0.37629020| Model Time :37.26755499839783 | DataProcessing Time :187.80655360221863
+Training Epoch : 101 | Total loss : 0.3470 
+Validation Epoch : 101 | Total loss : 0.37606469| Model Time :39.7893009185791 | DataProcessing Time :201.08458423614502
+Training Epoch : 102 | Total loss : 0.3467 
+Validation Epoch : 102 | Total loss : 0.37589398| Model Time :45.173417806625366 | DataProcessing Time :180.84386825561523
+Training Epoch : 103 | Total loss : 0.3462 
+Validation Epoch : 103 | Total loss : 0.37601268| Model Time :40.79026818275452 | DataProcessing Time :189.88041496276855
+Training Epoch : 104 | Total loss : 0.3460 
+Validation Epoch : 104 | Total loss : 0.37622350| Model Time :40.887025117874146 | DataProcessing Time :182.5195505619049
+Training Epoch : 105 | Total loss : 0.3468 
+Validation Epoch : 105 | Total loss : 0.37604204| Model Time :37.892199993133545 | DataProcessing Time :188.06556224822998
+Training Epoch : 106 | Total loss : 0.3460 
+Validation Epoch : 106 | Total loss : 0.37565029| Model Time :43.00706696510315 | DataProcessing Time :186.06243014335632
+Training Epoch : 107 | Total loss : 0.3459 
+Validation Epoch : 107 | Total loss : 0.37603524| Model Time :43.60723161697388 | DataProcessing Time :194.32547402381897
+Training Epoch : 108 | Total loss : 0.3461 
+Validation Epoch : 108 | Total loss : 0.37599757| Model Time :41.55098533630371 | DataProcessing Time :195.70546865463257
+Training Epoch : 109 | Total loss : 0.3457 
+Validation Epoch : 109 | Total loss : 0.37530372| Model Time :39.65214943885803 | DataProcessing Time :201.19354104995728
+Training Epoch : 110 | Total loss : 0.3458 
+Validation Epoch : 110 | Total loss : 0.37585798| Model Time :40.46419882774353 | DataProcessing Time :199.4782919883728
+Training Epoch : 111 | Total loss : 0.3463 
+Validation Epoch : 111 | Total loss : 0.37649068| Model Time :45.65459156036377 | DataProcessing Time :189.29210114479065
+Training Epoch : 112 | Total loss : 0.3454 
+Validation Epoch : 112 | Total loss : 0.37608570| Model Time :41.00277519226074 | DataProcessing Time :196.61668753623962
+Training Epoch : 113 | Total loss : 0.3458 
+Validation Epoch : 113 | Total loss : 0.37557590| Model Time :40.18016982078552 | DataProcessing Time :190.26790857315063
+Training Epoch : 114 | Total loss : 0.3453 
+Validation Epoch : 114 | Total loss : 0.37595871| Model Time :37.92549419403076 | DataProcessing Time :203.0053186416626
+Training Epoch : 115 | Total loss : 0.3460 
+Validation Epoch : 115 | Total loss : 0.37526494| Model Time :43.51725196838379 | DataProcessing Time :187.59897017478943
+Training Epoch : 116 | Total loss : 0.3454 
+Validation Epoch : 116 | Total loss : 0.37523940| Model Time :38.40765380859375 | DataProcessing Time :193.06605744361877
+Training Epoch : 117 | Total loss : 0.3451 
+Validation Epoch : 117 | Total loss : 0.37517807| Model Time :36.4151885509491 | DataProcessing Time :195.71461176872253
+Training Epoch : 118 | Total loss : 0.3451 
+Validation Epoch : 118 | Total loss : 0.37515056| Model Time :42.123042345047 | DataProcessing Time :192.2564594745636
+Training Epoch : 119 | Total loss : 0.3456 
+SVD converge fail SVD did not converge
+Validation Epoch : 119 | Total loss : 0.37546578| Model Time :39.29912853240967 | DataProcessing Time :197.3206398487091
+Training Epoch : 120 | Total loss : 0.3453 
+Validation Epoch : 120 | Total loss : 0.37506112| Model Time :41.00817131996155 | DataProcessing Time :190.97877669334412
+Training Epoch : 121 | Total loss : 0.3457 
+Validation Epoch : 121 | Total loss : 0.37513697| Model Time :40.28857421875 | DataProcessing Time :191.30851817131042
+Training Epoch : 122 | Total loss : 0.3451 
+Validation Epoch : 122 | Total loss : 0.37511441| Model Time :43.907442569732666 | DataProcessing Time :192.12041020393372
+Training Epoch : 123 | Total loss : 0.3454 
+Validation Epoch : 123 | Total loss : 0.37550655| Model Time :41.929447650909424 | DataProcessing Time :189.16276907920837
+Training Epoch : 124 | Total loss : 0.3450 
+Validation Epoch : 124 | Total loss : 0.37482280| Model Time :46.377476930618286 | DataProcessing Time :202.4816255569458
+Training Epoch : 125 | Total loss : 0.3452 
+Validation Epoch : 125 | Total loss : 0.37481132| Model Time :39.76414680480957 | DataProcessing Time :196.10841917991638
+Training Epoch : 126 | Total loss : 0.3449 
+Validation Epoch : 126 | Total loss : 0.37498495| Model Time :42.478952407836914 | DataProcessing Time :202.36389350891113
+Training Epoch : 127 | Total loss : 0.3448 
+Validation Epoch : 127 | Total loss : 0.37542284| Model Time :50.7021119594574 | DataProcessing Time :192.30957055091858
+Training Epoch : 128 | Total loss : 0.3454 
+Validation Epoch : 128 | Total loss : 0.37461776| Model Time :39.453810930252075 | DataProcessing Time :184.76384091377258
+Training Epoch : 129 | Total loss : 0.3450 
+Validation Epoch : 129 | Total loss : 0.37433642| Model Time :40.09662127494812 | DataProcessing Time :205.31869673728943
+Training Epoch : 130 | Total loss : 0.3444 
+Validation Epoch : 130 | Total loss : 0.37442210| Model Time :41.21206617355347 | DataProcessing Time :196.24905705451965
+Training Epoch : 131 | Total loss : 0.3448 
+Validation Epoch : 131 | Total loss : 0.37463883| Model Time :44.341830253601074 | DataProcessing Time :192.7458951473236
+Training Epoch : 132 | Total loss : 0.3450 
+Validation Epoch : 132 | Total loss : 0.37460521| Model Time :38.798829317092896 | DataProcessing Time :190.6060426235199
+Training Epoch : 133 | Total loss : 0.3444 
+SVD converge fail SVD did not converge
+Validation Epoch : 133 | Total loss : 0.37440124| Model Time :42.585915327072144 | DataProcessing Time :194.22124409675598
+Training Epoch : 134 | Total loss : 0.3443 
+Validation Epoch : 134 | Total loss : 0.37411278| Model Time :41.98483991622925 | DataProcessing Time :196.48413395881653
+Training Epoch : 135 | Total loss : 0.3445 
+Validation Epoch : 135 | Total loss : 0.37421182| Model Time :40.736764430999756 | DataProcessing Time :191.8563539981842
+Training Epoch : 136 | Total loss : 0.3447 
+Validation Epoch : 136 | Total loss : 0.37472430| Model Time :37.30117988586426 | DataProcessing Time :198.68553972244263
+Training Epoch : 137 | Total loss : 0.3445 
+Validation Epoch : 137 | Total loss : 0.37614134| Model Time :40.063931703567505 | DataProcessing Time :198.19659090042114
+Training Epoch : 138 | Total loss : 0.3446 
+Validation Epoch : 138 | Total loss : 0.37479058| Model Time :46.828627824783325 | DataProcessing Time :198.11014771461487
+Training Epoch : 139 | Total loss : 0.3448 
+Validation Epoch : 139 | Total loss : 0.37463337| Model Time :39.63652753829956 | DataProcessing Time :198.7562758922577
+Training Epoch : 140 | Total loss : 0.3445 
+Validation Epoch : 140 | Total loss : 0.37484878| Model Time :41.02698850631714 | DataProcessing Time :189.06398820877075
+Training Epoch : 141 | Total loss : 0.3446 
+SVD converge fail SVD did not converge
+Validation Epoch : 141 | Total loss : 0.37458685| Model Time :43.63386940956116 | DataProcessing Time :192.40300464630127
+Training Epoch : 142 | Total loss : 0.3449 
+Validation Epoch : 142 | Total loss : 0.37421048| Model Time :40.46532988548279 | DataProcessing Time :197.81552290916443
+Training Epoch : 143 | Total loss : 0.3441 
+Validation Epoch : 143 | Total loss : 0.37425268| Model Time :46.1201605796814 | DataProcessing Time :194.40928530693054
+Training Epoch : 144 | Total loss : 0.3440 
+Validation Epoch : 144 | Total loss : 0.37391081| Model Time :42.481505393981934 | DataProcessing Time :194.27371096611023
+Training Epoch : 145 | Total loss : 0.3441 
+Validation Epoch : 145 | Total loss : 0.37418726| Model Time :42.25829553604126 | DataProcessing Time :194.22507643699646
+Training Epoch : 146 | Total loss : 0.3443 
+Validation Epoch : 146 | Total loss : 0.37440285| Model Time :42.138184785842896 | DataProcessing Time :206.44073462486267
+Training Epoch : 147 | Total loss : 0.3442 
+Validation Epoch : 147 | Total loss : 0.37411204| Model Time :48.157607316970825 | DataProcessing Time :199.65470170974731
+Training Epoch : 148 | Total loss : 0.3441 
+Validation Epoch : 148 | Total loss : 0.37403801| Model Time :40.04308295249939 | DataProcessing Time :189.9456808567047
+Training Epoch : 149 | Total loss : 0.3439 
+Validation Epoch : 149 | Total loss : 0.37462276| Model Time :44.25761127471924 | DataProcessing Time :194.53313207626343
+Training Epoch : 150 | Total loss : 0.3440 
+Validation Epoch : 150 | Total loss : 0.37446162| Model Time :40.27736139297485 | DataProcessing Time :199.91991424560547
+Training Epoch : 151 | Total loss : 0.3438 
+Validation Epoch : 151 | Total loss : 0.37387106| Model Time :43.065265417099 | DataProcessing Time :201.6496341228485
+Training Epoch : 152 | Total loss : 0.3438 
+Validation Epoch : 152 | Total loss : 0.37432376| Model Time :37.196168184280396 | DataProcessing Time :198.12257266044617
+Training Epoch : 153 | Total loss : 0.3436 
+Validation Epoch : 153 | Total loss : 0.37436083| Model Time :40.42148470878601 | DataProcessing Time :198.3202142715454
+Training Epoch : 154 | Total loss : 0.3437 
+Validation Epoch : 154 | Total loss : 0.37358442| Model Time :39.74667263031006 | DataProcessing Time :199.30575251579285
+Training Epoch : 155 | Total loss : 0.3435 
+Validation Epoch : 155 | Total loss : 0.37380105| Model Time :45.68505239486694 | DataProcessing Time :201.56300902366638
+Training Epoch : 156 | Total loss : 0.3435 
+Validation Epoch : 156 | Total loss : 0.37387359| Model Time :43.64380216598511 | DataProcessing Time :195.65231895446777
+Training Epoch : 157 | Total loss : 0.3439 
+Validation Epoch : 157 | Total loss : 0.37409985| Model Time :41.510257959365845 | DataProcessing Time :200.13950967788696
+Training Epoch : 158 | Total loss : 0.3442 
+Validation Epoch : 158 | Total loss : 0.37427169| Model Time :41.43219804763794 | DataProcessing Time :203.68799304962158
+Training Epoch : 159 | Total loss : 0.3437 
+Validation Epoch : 159 | Total loss : 0.37395385| Model Time :41.75453495979309 | DataProcessing Time :203.69758701324463
+Training Epoch : 160 | Total loss : 0.3433 
+Validation Epoch : 160 | Total loss : 0.37347442| Model Time :42.41770625114441 | DataProcessing Time :194.15300107002258
+Training Epoch : 161 | Total loss : 0.3435 
+Validation Epoch : 161 | Total loss : 0.37374064| Model Time :38.54853534698486 | DataProcessing Time :197.39227747917175
+Training Epoch : 162 | Total loss : 0.3438 
+Validation Epoch : 162 | Total loss : 0.37363809| Model Time :40.80746674537659 | DataProcessing Time :199.5411252975464
+Training Epoch : 163 | Total loss : 0.3432 
+Validation Epoch : 163 | Total loss : 0.37446842| Model Time :40.422258377075195 | DataProcessing Time :201.54384064674377
+Training Epoch : 164 | Total loss : 0.3438 
+Validation Epoch : 164 | Total loss : 0.37395445| Model Time :41.26633095741272 | DataProcessing Time :202.14045524597168
+Training Epoch : 165 | Total loss : 0.3438 
+Validation Epoch : 165 | Total loss : 0.37462968| Model Time :38.90747022628784 | DataProcessing Time :189.80949521064758
+Training Epoch : 166 | Total loss : 0.3439 
+Validation Epoch : 166 | Total loss : 0.37384203| Model Time :39.621007442474365 | DataProcessing Time :192.06201362609863
+Training Epoch : 167 | Total loss : 0.3436 
+Validation Epoch : 167 | Total loss : 0.37388548| Model Time :38.425326108932495 | DataProcessing Time :182.72021865844727
+Training Epoch : 168 | Total loss : 0.3432 
+Validation Epoch : 168 | Total loss : 0.37367970| Model Time :43.518311977386475 | DataProcessing Time :194.18131256103516
+Training Epoch : 169 | Total loss : 0.3436 
+Validation Epoch : 169 | Total loss : 0.37380216| Model Time :41.18662190437317 | DataProcessing Time :200.64724206924438
+Training Epoch : 170 | Total loss : 0.3433 
+Validation Epoch : 170 | Total loss : 0.37405169| Model Time :47.0965793132782 | DataProcessing Time :201.70541524887085
+Training Epoch : 171 | Total loss : 0.3433 
+Validation Epoch : 171 | Total loss : 0.37358919| Model Time :40.48420429229736 | DataProcessing Time :194.1639688014984
+Training Epoch : 172 | Total loss : 0.3437 
+Validation Epoch : 172 | Total loss : 0.37384284| Model Time :43.19931244850159 | DataProcessing Time :195.08892583847046
+Training Epoch : 173 | Total loss : 0.3430 
+Validation Epoch : 173 | Total loss : 0.37358338| Model Time :39.138883113861084 | DataProcessing Time :189.34369325637817
+Training Epoch : 174 | Total loss : 0.3429 
+Validation Epoch : 174 | Total loss : 0.37333816| Model Time :39.562806367874146 | DataProcessing Time :195.03767251968384
+Training Epoch : 175 | Total loss : 0.3427 
+Validation Epoch : 175 | Total loss : 0.37326559| Model Time :40.048816442489624 | DataProcessing Time :196.6736204624176
+Training Epoch : 176 | Total loss : 0.3426 
+Validation Epoch : 176 | Total loss : 0.37405592| Model Time :39.337257862091064 | DataProcessing Time :189.83267521858215
+Training Epoch : 177 | Total loss : 0.3427 
+Validation Epoch : 177 | Total loss : 0.37368613| Model Time :43.53419756889343 | DataProcessing Time :196.57752871513367
+Training Epoch : 178 | Total loss : 0.3429 
+Validation Epoch : 178 | Total loss : 0.37357986| Model Time :43.1594820022583 | DataProcessing Time :193.06871938705444
+Training Epoch : 179 | Total loss : 0.3432 
+SVD converge fail SVD did not converge
+Validation Epoch : 179 | Total loss : 0.37384227| Model Time :41.471632957458496 | DataProcessing Time :195.78326439857483
+Training Epoch : 180 | Total loss : 0.3431 
+Validation Epoch : 180 | Total loss : 0.37323719| Model Time :41.51836919784546 | DataProcessing Time :197.60605239868164
+Training Epoch : 181 | Total loss : 0.3427 
+Validation Epoch : 181 | Total loss : 0.37350327| Model Time :39.610761642456055 | DataProcessing Time :193.97200393676758
+Training Epoch : 182 | Total loss : 0.3430 
+Validation Epoch : 182 | Total loss : 0.37312487| Model Time :39.077696084976196 | DataProcessing Time :190.41738033294678
+Training Epoch : 183 | Total loss : 0.3429 
+Validation Epoch : 183 | Total loss : 0.37340486| Model Time :37.63360905647278 | DataProcessing Time :193.11633825302124
+Training Epoch : 184 | Total loss : 0.3430 
+Validation Epoch : 184 | Total loss : 0.37360510| Model Time :37.20645213127136 | DataProcessing Time :188.0694658756256
+Training Epoch : 185 | Total loss : 0.3428 
+Validation Epoch : 185 | Total loss : 0.37319481| Model Time :39.500895500183105 | DataProcessing Time :195.71189522743225
+Training Epoch : 186 | Total loss : 0.3430 
+Validation Epoch : 186 | Total loss : 0.37391669| Model Time :42.38244104385376 | DataProcessing Time :196.52043747901917
+Training Epoch : 187 | Total loss : 0.3429 
+Validation Epoch : 187 | Total loss : 0.37357384| Model Time :40.651219606399536 | DataProcessing Time :195.74038982391357
+Training Epoch : 188 | Total loss : 0.3432 
+Validation Epoch : 188 | Total loss : 0.37322843| Model Time :40.41040802001953 | DataProcessing Time :209.22261095046997
+Training Epoch : 189 | Total loss : 0.3426 
+SVD converge fail SVD did not converge
+Validation Epoch : 189 | Total loss : 0.37354606| Model Time :41.67849659919739 | DataProcessing Time :198.4742534160614
+Training Epoch : 190 | Total loss : 0.3428 
+Validation Epoch : 190 | Total loss : 0.37332317| Model Time :44.62076950073242 | DataProcessing Time :194.5569658279419
+Training Epoch : 191 | Total loss : 0.3427 
+Validation Epoch : 191 | Total loss : 0.37356701| Model Time :39.317837715148926 | DataProcessing Time :192.7742247581482
+Training Epoch : 192 | Total loss : 0.3426 
+Validation Epoch : 192 | Total loss : 0.37313274| Model Time :47.53133702278137 | DataProcessing Time :193.23012566566467
+Training Epoch : 193 | Total loss : 0.3420 
+Validation Epoch : 193 | Total loss : 0.37297690| Model Time :41.716182470321655 | DataProcessing Time :197.32416224479675
+Training Epoch : 194 | Total loss : 0.3422 
+Validation Epoch : 194 | Total loss : 0.37324002| Model Time :38.514822244644165 | DataProcessing Time :197.74980068206787
+Training Epoch : 195 | Total loss : 0.3425 
+Validation Epoch : 195 | Total loss : 0.37372115| Model Time :43.82451844215393 | DataProcessing Time :198.94497966766357
+Training Epoch : 196 | Total loss : 0.3431 
+Validation Epoch : 196 | Total loss : 0.37357828| Model Time :42.68897104263306 | DataProcessing Time :195.29221630096436
+Training Epoch : 197 | Total loss : 0.3429 
+Validation Epoch : 197 | Total loss : 0.37310618| Model Time :44.32236361503601 | DataProcessing Time :189.31037163734436
+Training Epoch : 198 | Total loss : 0.3425 
+Validation Epoch : 198 | Total loss : 0.37388748| Model Time :43.572144746780396 | DataProcessing Time :194.66705918312073
+Training Epoch : 199 | Total loss : 0.3429 
+SVD converge fail SVD did not converge
+Validation Epoch : 199 | Total loss : 0.37371811| Model Time :51.75661492347717 | DataProcessing Time :192.82701349258423
+Training Epoch : 200 | Total loss : 0.3423 
+Validation Epoch : 200 | Total loss : 0.37287515| Model Time :50.14317083358765 | DataProcessing Time :192.58884739875793
+Training Epoch : 201 | Total loss : 0.3424 
+Validation Epoch : 201 | Total loss : 0.37376347| Model Time :43.90687561035156 | DataProcessing Time :191.19174003601074
+Training Epoch : 202 | Total loss : 0.3425 
+Validation Epoch : 202 | Total loss : 0.37312090| Model Time :42.59404516220093 | DataProcessing Time :187.65107488632202
+Training Epoch : 203 | Total loss : 0.3423 
+Validation Epoch : 203 | Total loss : 0.37297690| Model Time :42.2365620136261 | DataProcessing Time :193.77635192871094
+Training Epoch : 204 | Total loss : 0.3423 
+Validation Epoch : 204 | Total loss : 0.37290183| Model Time :39.37980532646179 | DataProcessing Time :205.59406995773315
+Training Epoch : 205 | Total loss : 0.3424 
+Validation Epoch : 205 | Total loss : 0.37323019| Model Time :41.36967849731445 | DataProcessing Time :187.64561080932617
+Training Epoch : 206 | Total loss : 0.3420 
+Validation Epoch : 206 | Total loss : 0.37282178| Model Time :42.530635356903076 | DataProcessing Time :190.92251825332642
+Training Epoch : 207 | Total loss : 0.3421 
+Validation Epoch : 207 | Total loss : 0.37313148| Model Time :36.50442838668823 | DataProcessing Time :200.8664755821228
+Training Epoch : 208 | Total loss : 0.3422 
+Validation Epoch : 208 | Total loss : 0.37315658| Model Time :47.01803278923035 | DataProcessing Time :193.72636818885803
+Training Epoch : 209 | Total loss : 0.3421 
+Validation Epoch : 209 | Total loss : 0.37282437| Model Time :44.05992412567139 | DataProcessing Time :198.93879890441895
+Training Epoch : 210 | Total loss : 0.3422 
+Validation Epoch : 210 | Total loss : 0.37277922| Model Time :40.64269137382507 | DataProcessing Time :189.79450154304504
+Training Epoch : 211 | Total loss : 0.3424 
+Validation Epoch : 211 | Total loss : 0.37388858| Model Time :45.17671799659729 | DataProcessing Time :195.97409844398499
+Training Epoch : 212 | Total loss : 0.3421 
+Validation Epoch : 212 | Total loss : 0.37272182| Model Time :39.703805446624756 | DataProcessing Time :197.6210799217224
+Training Epoch : 213 | Total loss : 0.3421 
+Validation Epoch : 213 | Total loss : 0.37295538| Model Time :52.403611183166504 | DataProcessing Time :191.64923214912415
+Training Epoch : 214 | Total loss : 0.3422 
+Validation Epoch : 214 | Total loss : 0.37319240| Model Time :49.47565054893494 | DataProcessing Time :189.4837028980255
+Training Epoch : 215 | Total loss : 0.3423 
+Validation Epoch : 215 | Total loss : 0.37323129| Model Time :49.18618035316467 | DataProcessing Time :195.31607151031494
+Training Epoch : 216 | Total loss : 0.3420 
+Validation Epoch : 216 | Total loss : 0.37297109| Model Time :49.357640504837036 | DataProcessing Time :203.9188413619995
+Training Epoch : 217 | Total loss : 0.3421 
+Validation Epoch : 217 | Total loss : 0.37428716| Model Time :43.26919364929199 | DataProcessing Time :191.79405665397644
+Training Epoch : 218 | Total loss : 0.3424 
+Validation Epoch : 218 | Total loss : 0.37283766| Model Time :44.57357740402222 | DataProcessing Time :190.47918510437012
+Training Epoch : 219 | Total loss : 0.3418 
+Validation Epoch : 219 | Total loss : 0.37323180| Model Time :44.83956789970398 | DataProcessing Time :192.52354502677917
+Training Epoch : 220 | Total loss : 0.3422 
+Validation Epoch : 220 | Total loss : 0.37293613| Model Time :41.52640342712402 | DataProcessing Time :200.3079514503479
+Training Epoch : 221 | Total loss : 0.3420 
+Validation Epoch : 221 | Total loss : 0.37285262| Model Time :44.56506109237671 | DataProcessing Time :192.3752212524414
+Training Epoch : 222 | Total loss : 0.3415 
+slurmstepd: error: *** JOB 30160104 ON falcon4 CANCELLED AT 2022-06-09T15:57:45 ***
